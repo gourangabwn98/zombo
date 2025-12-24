@@ -35,6 +35,8 @@ require("dotenv").config(); // Better to use require().config() pattern
 const authRoutes = require("./routes/authRoutes");
 const menuRoutes = require("./routes/menuRoutes");
 const orderRoutes = require("./routes/orderRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+// app.use("/api/admin", require("./routes/adminRoutes"));
 
 const app = express();
 
@@ -46,6 +48,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/menu", menuRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/admin", adminRoutes);
 
 // MongoDB Connection with better error handling and modern options
 const connectDB = async () => {
