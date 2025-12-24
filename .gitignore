@@ -1,0 +1,64 @@
+# Node.js / General
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output/
+
+# Dependency directories (if any extra)
+bower_components/
+
+# Build/output directories
+/dist/
+/build/
+/out/
+
+# React specific (Create React App or similar)
+/client/build/
+/client/.cache/
+/client/node_modules/  # Redundant but safe if separate
+
+# Editor/IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional: Production builds if you build server-side
+/public/  # If using something like Next.js (adjust if needed)
+
+# MongoDB local data (if you store db files in project, rare)
+data/
+dump/
+
+# Lock files (optional: some prefer to commit them)
+# package-lock.json  # Comment out if you want to ignore
+# yarn.lock
+# pnpm-lock.yaml
